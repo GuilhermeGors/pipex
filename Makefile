@@ -1,4 +1,4 @@
-CC = cc
+CC = cc 
 
 LIB_DIR = libft
 LIBFT = $(LIB_DIR)/libft.a
@@ -7,12 +7,12 @@ CFLAGS = -Wall -Wextra -Werror -g
 
 OBJ_DIR = obj
 
-SRC = pipex.c
+SRC = pipex.c \
+	  pipex_utils.c
+
 OBJS = $(SRC:%.c=$(OBJ_DIR)/%.o)
 
 NAME = pipex
-
-VALGRIND_FLAGS = --leak-check=full --show-leak-kinds=all --track-origins=yes map.ber
 
 $(OBJ_DIR)/%.o: %.c
 	@mkdir -p $(OBJ_DIR)

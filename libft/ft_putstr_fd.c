@@ -6,7 +6,7 @@
 /*   By: gugomes- <gugomes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 02:31:59 by gugomes-          #+#    #+#             */
-/*   Updated: 2024/10/12 02:35:47 by gugomes-         ###   ########.fr       */
+/*   Updated: 2025/01/09 16:40:38 by gugomes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ void	ft_putstr_fd(char *s, int fd)
 		write(fd, s, 1);
 		s++;
 	}
+	write(fd, "\n", 1);
 }
 /*
 #include <stdio.h>
